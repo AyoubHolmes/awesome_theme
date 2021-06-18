@@ -41,30 +41,11 @@
                     </div>
                 </div>
             </nav>
-        </header>
-        <header style="direction: rtl;">
-            <nav class="navbar navbar-expand-lg navbar-light" aria-label="Ninth navbar example">
-                <div class="container-xl">
-                    <a class="logo_1" href="https://freemium.kezakoo.com/home/"><img src="<?php echo get_bloginfo('template_url') ?>/images/Logo_Kezakoo_black_orange (1) 1 (1).png"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-                        <span><img src="<?php echo get_bloginfo('template_url') ?>/images/Shape.png"></span>
-                    </button>
-
-                    <div style="margin-top: 20px; margin-right: 100px;background-color: white;" class="collapse navbar-collapse" id="navbarsExample07XL">
-                        <?php
-                            wp_nav_menu( array(
+	</header>
+	<header style="direction: rtl;">
+		<?php
+                           wp_nav_menu( array(
                                 'theme_location'    => 'primary',
-                                'depth'             => 2,
-                                'container'         => 'div',
-                                'container_class'   => 'collapse navbar-collapse',
-                                'container_id'      => 'bs-example-navbar-collapse-1',
-                                'menu_class'        => 'nav navbar-nav',
-                                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                                'walker'            => new WP_Bootstrap_Navwalker(),
                             ) );
-                        ?>
-                    </div>
-                </div>
-            </nav>
-        </header>
-       
+              ?>
+	</header>

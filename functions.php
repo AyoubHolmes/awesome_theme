@@ -20,12 +20,6 @@ function awesome_theme_setup() {
 
 add_action('init', 'awesome_theme_setup');
 
-/* function new_submenu_class($menu) {    
-    $menu = preg_replace('/ class="sub-menu"/','/ class="" /',$menu);        
-    return $menu;      
-}
- */
-add_filter('wp_nav_menu','new_submenu_class'); 
 
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
